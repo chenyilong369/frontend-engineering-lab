@@ -1,0 +1,22 @@
+# 告诉 EditorConfig 这是项目的根配置文件，不再向上搜索 [citation:2][citation:4][citation:9]
+root = true
+
+# 匹配项目中所有文件 [citation:4]
+[*]
+# 字符集设置为 UTF-8 [citation:4][citation:7]
+charset = utf-8
+# 缩进风格使用空格 (space) [citation:4][citation:9]
+indent_style = space
+# 缩进大小为2个空格 [citation:4][citation:9]
+indent_size = 2
+# 换行符类型使用 LF (Unix风格) [citation:4][citation:7][citation:9]
+end_of_line = lf
+# 自动删除行尾多余的空格 [citation:4][citation:7]
+trim_trailing_whitespace = true
+# 文件末尾自动插入一个空行 [citation:4][citation:7][citation:9]
+insert_final_newline = true
+
+# 针对特定文件的覆盖配置
+# 对于 Markdown 文件，可能不希望对行尾进行修剪 [citation:7]
+[*.md]
+trim_trailing_whitespace = false
